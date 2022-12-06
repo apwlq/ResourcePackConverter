@@ -1,24 +1,24 @@
-# Resource Pack Converter
+# 리소스 팩 변환기
 
-This is our 1.8-1.12 -> 1.13 Resource pack converter. We used this to do most of the grunt work to convert Hypixel's various resource packs for the 1.13 update.
+이것은 1.8-1.12 -> 1.13 리소스 팩 변환기입니다. 우리는 이것을 1.13 업데이트를 위해 하이픽셀의 다양한 리소스 팩을 변환하기 위해 대부분의 힘든 작업을 수행하는 데 사용했습니다.
 
-We know that many use resource packs in nonstandard and quirky ways - but giving this a shot *may* reduce quite a bit of your pain and workload for the 1.13 conversion.
+우리는 많은 사람들이 비표준적이고 기발한 방식으로 리소스 팩을 사용한다는 것을 알고 있습니다. 하지만 이렇게 한 번 시도하면 1.13 변환에 대한 고통과 작업량이 상당히 줄어들 수 있습니다.
 
-Please note again that while this code worked for the packs we use (ranging from 1.8 to 1.12 versions), it might not convert everything perfectly;  You may need to fix some things by hand, some items may have been mapped wrong, some things are no longer possible in the newer version, etc. So please be sure to throughly test the results!
+이 코드는 우리가 사용하는 팩(1.8에서 1.12 버전 범위)에 대해 작동했지만 모든 것을 완벽하게 변환하지 못할 수 있습니다. 수동으로 수정해야 할 수도 있고, 잘못 매핑된 항목이 있을 수도 있고, 최신 버전에서 더 이상 불가능한 것 등이 있을 수 있습니다. 따라서 결과를 철저히 테스트하십시오!
 
-Also if any other developers would like to open any PRs with fixes and additions please feel free.
+또한 다른 개발자가 수정 및 추가가 포함된 PR을 열고자 하는 경우 언제든지 문의해 주세요.
 
-While this program will copy your resource packs before converting them, we still recommend backing them up, just in case!
+이 프로그램은 리소스 팩을 변환하기 전에 복사하지만 만약을 대비하여 백업하는 것이 좋습니다!
 
-## Usage
-[Download the compiled jar file](https://github.com/HypixelDev/ResourcePackConverter/releases/latest), or compile the source yourself.  
-The program will look for any valid resource packs in the current directory and is easily run by doing this.
+## 용법
+[컴파일된 jar 파일 다운로드](https://github.com/HypixelDev/ResourcePackConverter/releases/latest) 또는 직접 소스를 컴파일합니다.  
+프로그램은 현재 디렉토리에서 유효한 리소스 팩을 찾고 이렇게 하면 쉽게 실행할 수 있습니다.
 
     java -jar ResourcePackConverter.jar
 
-You can set the input directory using one of the following parameters.
-`-i <path>`, `--input <path>` or `--input-dir <path>`.
+다음 매개변수 중 하나를 사용하여 입력 디렉토리를 설정할 수 있습니다.
+`-i <경로>`, `--input <경로>` 또는 `--input-dir <경로>`.
 
     java -jar ResourcePackConverter.jar --input input/
 
-We hope this helps out!
+도움이 되었기를 바랍니다.
